@@ -18,6 +18,6 @@ class Candidatos(models.Model):
     
 class localprova(models.Model):
     escola = models.CharField(max_length=200)
-    enderco = models.CharField(max_length=200)
+    endereco = models.CharField(max_length=200)
     cidade = models.CharField(max_length=200)
     estado = models.CharField(max_length=200)
