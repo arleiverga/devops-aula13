@@ -88,4 +88,16 @@ def lista_candidatos(request):
             'year':datetime.now().year,
         })
     )
+def lista_localprova(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/lista_localprova.html',
+        context_instance = RequestContext(request,
+        {
+            'title':'Local de prova',
+            'localprova': localporva.objects.all(),
+            'year':datetime.now().year,
+        })
+    )
 
