@@ -15,3 +15,9 @@ class Vestibular(models.Model):
 
 class Candidato(models.Model):
     nome = models.CharField(max_length=200)
+    
+class localprova(models.Model):
+    escola = models.CharField(max_length=200)
+    enderco = models.CharField(max_length=200)
+    cidade = models.CharField(max_length=200)
+    estado = models.CharField(max_length=200)
