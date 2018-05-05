@@ -7,7 +7,7 @@
 </div>
 
 <table class="table">
-    <tr><th>Escola</th><th>Enderço</th></tr><tr><th>Escola</th><th>Cidade</th><th>Estado</th></tr>
+    <tr><th>Locais:</tr>
         {% for localprova in localprova %}
           <tr><td>{{ localprova.escola }}</td><td>{{ localprova.endereco }}</td><td>{{ localprova.cidade }}</td><td>{{ localprova.estado }}</td></tr>
         {% endfor %}
